@@ -64,7 +64,9 @@ exit
 }
 
 start
+echo "Start build_container"
 build_container
+echo "End build_container"
 description
 
 msg_ok "Completed Successfully!\n"
