@@ -19,9 +19,9 @@ EOF
 header_info
 echo -e "Loading..."
 APP="Step-CA"
-var_disk="1"
+var_disk="2"
 var_cpu="1"
-var_ram="512"
+var_ram="1024"
 var_os="debian"
 var_version="12"
 variables
