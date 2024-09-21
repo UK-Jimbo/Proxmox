@@ -63,11 +63,11 @@ msg_ok "Updated ${APP} LXC"
 exit
 }
 
-msg_info "Before start"
+msg_ok "Before start"
 start
-msg_info "Start build_container"
+msg_ok "Start build_container"
 build_container
-msg_info "End build_container"
+msg_ok "End build_container"
 description
 
 msg_ok "Completed Successfully!\n"
