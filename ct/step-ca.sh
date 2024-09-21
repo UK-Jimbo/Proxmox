@@ -17,7 +17,7 @@ cat <<"EOF"
 EOF
 }
 header_info
-echo -e "Loading Step-CA..."
+echo -e "Loading..."
 APP="Step-CA"
 var_disk="4"
 var_cpu="2"
