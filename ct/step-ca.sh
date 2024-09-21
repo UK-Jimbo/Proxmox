@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source <(curl -s https://raw.githubusercontent.com/UK-Jimbo/Proxmox/main/misc/build.func)
+source <(curl -s https://raw.githubusercontent.com/tteck/Proxmox/main/misc/build.func)
 # Copyright (c) 2021-2024 tteck
 # Author: tteck (tteckster)
 # License: MIT
@@ -8,18 +8,17 @@ source <(curl -s https://raw.githubusercontent.com/UK-Jimbo/Proxmox/main/misc/bu
 function header_info {
 clear
 cat <<"EOF"
-   _____ __                   _________ 
-  / ___// /____  ____        / ____/   |
-  \__ \/ __/ _ \/ __ \______/ /   / /| |
- ___/ / /_/  __/ /_/ /_____/ /___/ ___ |
-/____/\__/\___/ .___/      \____/_/  |_|
-             /_/                        
+    ____             __            
+   / __ \____  _____/ /_  __  _____
+  / / / / __ \/ ___/ //_/ _ \/ ___/
+ / /_/ / /_/ / /__/ ,< /  __/ /    
+/_____/\____/\___/_/|_|\___/_/     
  
 EOF
 }
 header_info
-echo -e "Loading..."
-APP="Step-CA"
+echo -e "Loading Step-CA..."
+APP="Docker"
 var_disk="4"
 var_cpu="2"
 var_ram="2048"
@@ -63,11 +62,8 @@ msg_ok "Updated ${APP} LXC"
 exit
 }
 
-msg_ok "Before start"
 start
-msg_ok "Start build_container"
 build_container
-msg_ok "End build_container"
 description
 
 msg_ok "Completed Successfully!\n"
