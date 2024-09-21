@@ -35,7 +35,7 @@ echo -e '{\n  "log-driver": "journald"\n}' >/etc/docker/daemon.json
 $STD sh <(curl -sSL https://get.docker.com)
 msg_ok "Installed Docker $DOCKER_LATEST_VERSION"
 
-read -r -p "Would you like to add Portainer? <y/N> " prompt
+read -r -p "Would you like to add Step-CA Portainer? <y/N> " prompt
 if [[ ${prompt,,} =~ ^(y|yes)$ ]]; then
   msg_info "Installing Portainer $PORTAINER_LATEST_VERSION"
   docker volume create portainer_data >/dev/null
