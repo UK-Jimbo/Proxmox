@@ -18,7 +18,7 @@ EOF
 }
 header_info
 echo -e "Loading Step-CA..."
-APP="Docker"
+APP="Step-CA"
 var_disk="4"
 var_cpu="2"
 var_ram="2048"
